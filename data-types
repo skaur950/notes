@@ -1,0 +1,33 @@
+
+To input data in Python, you can use various methods depending on your requirements and the type of data you're dealing with. Here's how you can input each data type:
+
+Numeric Types:
+int and float: You can use the input() function to accept user input as a string and then convert it to the desired numeric type using int() or float() functions.
+x = int(input("Enter an integer: "))
+y = float(input("Enter a float: "))
+
+Sequence Types:
+str: You can directly use the input() function to accept string input.
+name = input("Enter your name: ")
+list and tuple: You can accept input as a string and then convert it into a list or tuple using the split() function.
+numbers = input("Enter numbers separated by space: ").split()
+numbers = [int(num) for num in numbers]  # Convert strings to integers if needed
+coordinates = tuple(input("Enter coordinates (x y): ").split())
+
+Mapping Type:
+dict: You can accept input as key-value pairs separated by space or other delimiters and then construct the dictionary.
+data = input("Enter key-value pairs (key1:value1 key2:value2): ").split()
+my_dict = dict(item.split(":") for item in data)
+
+Set Type:
+set: You can accept input as a sequence of items separated by space and then convert it into a set.
+items = input("Enter items separated by space: ").split()
+my_set = set(items)
+
+Boolean Type:
+bool: You can accept input as a string and then convert it to a boolean value.
+is_raining_str = input("Is it raining? (True/False): ")
+is_raining = bool(is_raining_str)
+
+None Type:
+NoneType: Since None represents absence of value, you don't usually accept input for it.
