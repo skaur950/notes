@@ -1,0 +1,45 @@
+builtin functions: input(), print(), len(), str(), int()
+input(): This function is used to take input from the user.
+Syntax:
+
+input([prompt]) 
+prompt (optional): A string that is printed to the standard output (usually the screen), to prompt the user before input is taken. The prompt string, if given, is printed before reading the input.
+Example:
+
+name = input("Enter your name: ") 
+print(): This function is used to display output to the standard output (usually the screen).
+Syntax:
+
+print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False) 
+objects: One or more objects to be printed.
+sep (optional): Separator between the objects. Default is a space.
+end (optional): String appended after the last object, default is a newline.
+file (optional): A file-like object (stream). Defaults to the current sys.stdout.
+flush (optional): Whether to forcibly flush the stream.
+Example:
+
+print("Hello, world!") 
+len(): This function returns the length (the number of items) of an object.
+Syntax:
+
+len(s) 
+s: A sequence (such as a string, bytes, tuple, list, or range) or a collection (such as a dictionary, set, or frozen set).
+Example:
+
+my_list = [1, 2, 3, 4, 5] length = len(my_list) 
+str(): This function returns the string representation of an object.
+Syntax:
+
+str(object='') 
+object (optional): Any object.
+Example:
+
+number = 10 str_number = str(number) 
+int(): This function converts a string or a number to an integer.
+Syntax:
+
+int(x=0, base=10) 
+x: A number or a string to be converted to an integer.
+base (optional): The base to which the string representation of the number should be considered.
+Example:
+num_str = "10" num = int(num_str) 
